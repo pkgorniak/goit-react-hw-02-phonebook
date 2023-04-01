@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
+import css from './Filter.module.css';
 
 const Filter = ({ filterValue, onFilterChange }) => {
   return (
-    <label>
+    <label className={css.filterItem}>
       Fliter contacts by name
       <input
+        className={css.filterInput}
         type="text"
         name="filter"
         value={filterValue}
